@@ -159,9 +159,9 @@ elif menu_selection == "Informações do Projeto":
     st.subheader("Gráfico de Dispersão da Similaridade dos Usuários")
     if not st.session_state.users.empty:
         fig = px.scatter(st.session_state.users, x='Idade', y='Similaridade', 
-                         text='Nome', title='Dispersão da Similaridade dos Usuários', 
-                         labels={'Idade': 'Idade', 'Similaridade': 'Similaridade'},
-                         color='Similaridade', color_continuous_scale='Viridis')
+                        text='Nome', title='Dispersão da Similaridade dos Usuários', 
+                        labels={'Idade': 'Idade', 'Similaridade': 'Similaridade'},
+                        color='Similaridade', color_continuous_scale='Viridis')
         st.plotly_chart(fig)
 
 elif menu_selection == "Matchmaking":
